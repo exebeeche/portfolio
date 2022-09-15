@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" xmlns:text-align="http://www.w3.org/1999/xhtml">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <title> Angela's Portfolio Website | TechWriter </title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
 <!-- navigation menu -->
 <nav>
     <div class="navbar">
-        <div class="logo"><img src="./assets/images/logo.png" alt=""></div>
+        <div class="logo"><img src="./assets/img/logo.png" alt=""></div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -60,7 +61,7 @@
         <div class="title"><span>About Me</span></div>
         <div class="about-details">
             <div class="left">
-                <img src="./assets/images/about.jpg" alt="">
+                <img src="./assets/img/about.jpg" alt="">
             </div>
             <div class="right">
                 <div class="topic">Writing&Coding Is My Passion</div>
@@ -129,17 +130,208 @@
     </div>
 </section>
 
+<!-- My Qualification Section Start -->
+
+<section class="qualification" id="qualification">
+    <div class="content">
+        <div class="title"><span>Qualification</span></div>
+        <div class="qualification__container container">
+            <div class="qualification__tabs">
+                <div class="qualification__button button--flex qualification__active" data-target="#education">
+                    <i class="uil uil-graduation-cap qualification__icon"></i>
+                    Education
+                </div>
+
+                <div class="qualification__button button--flex" data-target="#work">
+                    <i class="uil uil-briefcase-alt qualification__icon"></i>
+                    Work
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+                <!--=============== QUALIFICATION CONTENT 1 ===============-->
+                <div class="qualification__content qualification__active" data-content id="education">
+                    <!--=============== QUALIFICATION 1 ===============-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Engineer's degree, Cosmic Geodesy</h3>
+                            <span class="qualification__subtitle">MIIGAiK</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                1999 - 2004
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 2 ===============-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">DITA-OT Day Conference</h3>
+                            <span class="qualification__subtitle">Netherlands</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2018
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 3 ===============-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Write the Docs Conference</h3>
+                            <span class="qualification__subtitle">Online</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2021
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 4 ===============-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div class="qualification__time">
+                            <span class="qualification__rounder"></span>
+                            <!-- <span class="qualification__line"></span> -->
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">C# Course</h3>
+                            <span class="qualification__subtitle">dotnet.microsoft</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--=============== QUALIFICATION CONTENT 2 ===============-->
+                <div class="qualification__content" data-content id="work">
+                    <!--=============== QUALIFICATION 1 ===============-->
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Lead Technical Writer</h3>
+                            <span class="qualification__subtitle">YADRO</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2017 - 2019
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 2 ===============-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div class="qualification__time">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Technical Writer</h3>
+                            <span class="qualification__subtitle">Waves Enterprise</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2019-2020
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Technical Writer</h3>
+                            <span class="qualification__subtitle">SberDevice</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-2021
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                             <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <!--=============== QUALIFICATION 3 ===============-->
+                    <div class="qualification__data">
+                        <div></div>
+
+                        <div class="qualification__time">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <h3 class="qualification__title">Lead Technical Writer</h3>
+                            <span class="qualification__subtitle">Arenadata Software</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2020-2021
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <h3 class="qualification__title">Contributor Technical Writer</h3>
+                            <span class="qualification__subtitle">Status.im</span>
+                            <div class="qualification__calendar">
+                                <i class="uil uil-calendar-alt"></i>
+                                2022-2022
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+<!--                            <span class="qualification__line"></span>-->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
+
+<!--
 <section class="qualification" id="qualification">
     <h2 class="section_title">Qualification</h2>
     <span class="section_subtitle">My personal career</span>
     <div class="qualification_container container">
         <div class="qualification_tabs">
-            <div class="qualification_button button--flex">
+            <div class="qualification_button button&#45;&#45;flex">
                 <i class="uil uil-graduation-cap qualification_icon"></i>
                     Education
                 </div>
 
-            <div class="qualification_button button--flex">
+            <div class="qualification_button button&#45;&#45;flex">
                 <i class="uil uil-briefcase-alt qualification_icon"></i>
                 Work
             </div>
@@ -175,6 +367,7 @@
     </div>
 
 </section>
+-->
 
 
 <!-- My Portfolio Section Start -->
@@ -260,6 +453,6 @@
     </div>
 </footer>
 
-<script src="./js/script.js"></script>
+<script src="./assets/js/script.js"></script>
 </body>
 </html>
